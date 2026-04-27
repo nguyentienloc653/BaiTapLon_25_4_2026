@@ -67,6 +67,12 @@
             color: var(--muted);
         }
 
+        .owner-line {
+            margin: 12px 0 0;
+            color: var(--primary);
+            font-weight: 700;
+        }
+
         .add-link {
             display: inline-flex;
             align-items: center;
@@ -217,6 +223,7 @@
         <div>
             <h1>Danh sach cong viec</h1>
             <p class="subtitle">Quan ly cac cong viec can xu ly trong ngay mot cach gon gang.</p>
+            <p class="owner-line" th:text="${'Danh sach cua: ' + ownerName}">Danh sach cua:</p>
         </div>
         <a class="add-link" th:href="@{/add-todo}">+ Them cong viec</a>
     </div>
